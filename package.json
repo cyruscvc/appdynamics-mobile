@@ -1,0 +1,39 @@
+{
+  "name": "com.cyruscvc.appdynamicsmobile",
+  "displayName": "AppDynamics Mobile",
+  "version": "1.0.0",
+  "description": "Cordova plugin to enable AppDynamics Mobile SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Cyrus Vance Cunanan",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^12.0.1",
+    "cordova-ios": "^7.0.1"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "appd-plugin-eum-mobile": {
+        "APP_KEY": "00000",
+        "SCREENSHOTS_ENABLED": "true",
+        "LOGGING_LEVEL": "6",
+        "COLLECTOR_URL": "https://fra-col.eum-appdynamics.com",
+        "SCREENSHOT_URL": "https://image.eum-appdynamics.com",
+        "REACHABILITY_HOST": "www.google.com",
+        "INTERACTION_CAPTURE_MODE": "0"
+      }
+    }
+  },
+  "dependencies": {
+    "appd-plugin-eum-mobile": "21.5.0"
+  }
+}
